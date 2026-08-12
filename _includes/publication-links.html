@@ -1,0 +1,19 @@
+{% comment %}
+  Renders citation and resource links for a publication.
+  Usage: {% include publication-links.html item=post %}
+         {% include publication-links.html item=page small=true %}
+{% endcomment %}
+{% assign item = include.item %}
+{% if item.citation or item.paperurl or item.slidesurl or item.bibtexurl or item.dataurl %}
+<p{% if include.small %} style="font-size: smaller"{% endif %}>
+  {%- if item.citation -%}
+    Recommended citation: {{ item.citation }}
+    {%- if item.paperurl or item.slidesurl or item.bibtexurl or item.dataurl -%}<br />{%- endif -%}
+  {%- endif -%}
+  {%- assign sep = "" -%}
+  {%- if item.paperurl -%}{{ sep }}<a href="{{ item.paperurl }}">Download Paper</a>{%- assign sep = " | " -%}{%- endif -%}
+  {%- if item.slidesurl -%}{{ sep }}<a href="{{ item.slidesurl }}">Download Slides</a>{%- assign sep = " | " -%}{%- endif -%}
+  {%- if item.bibtexurl -%}{{ sep }}<a href="{{ item.bibtexurl }}">Download Bibtex</a>{%- assign sep = " | " -%}{%- endif -%}
+  {%- if item.dataurl -%}{{ sep }}<a href="{{ item.dataurl }}">Download Data</a>{%- assign sep = " | " -%}{%- endif -%}
+</p>
+{% endif %}

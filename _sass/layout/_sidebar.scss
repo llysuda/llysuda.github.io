@@ -195,7 +195,20 @@
 .sidebar .author__desktop {
   display: none;
   @media screen and (min-width: 1024px) {
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    white-space: normal;
+
+    .author__desktop-text {
+      flex: 1;
+      min-width: 0;
+      line-height: 1.4;
+    }
+
+    .icon-pad-right {
+      flex-shrink: 0;
+      margin-top: 0.15em;
+    }
   }
 }
 
@@ -305,6 +318,11 @@
 
   li {
     white-space: nowrap;
+
+    // Long employer/location text needs to wrap in the fixed sidebar
+    @include breakpoint($large) {
+      white-space: normal;
+    }
   }
 
   a {

@@ -15,10 +15,11 @@ My research experience covers machine translation and large language models. One
 Research Interests
 ======
 Language-intelligence-centered LLMs and agents. Topics include:
+- Coding LLM and agents
+- Long-horizon learning
 - Continual learning
 - Memory mechanisms
-- Coding agents
-- Long-horizon agents
+- multimodal understanding
 
 Please feel free to contact me if you are interested in Ph.D. positions or collaboration opportunities with SLAI.
 

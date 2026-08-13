@@ -17,8 +17,8 @@ Research Interests
 Language-intelligence-centered LLMs and agents. Topics include:
 - Continual learning
 - Memory mechanisms
-- Omni-modal understanding
-- Duplex speech interaction
+- Coding agents
+- Long-horizon agents
 
 Please feel free to contact me if you are interested in Ph.D. positions or collaboration opportunities with SLAI.
 

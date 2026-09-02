@@ -37,6 +37,7 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  scroll-margin-top: calc(#{$masthead-height} + 1rem);
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -49,6 +50,11 @@
 }
 
 .page__content {
+
+  h1,
+  h2 {
+    scroll-margin-top: calc(#{$masthead-height} + 1rem);
+  }
 
   h2 {
     padding-bottom: 0.5em;

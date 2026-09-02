@@ -1,7 +1,7 @@
 ---
 title: "Followbench: A multi-level fine-grained constraints following benchmark for large language models"
 collection: publications
-category: papersxxxx
+category: papers
 permalink: /publication/2024-08-11-followbench
 excerpt: 'Yuxin Jiang, Yufei Wang, Xingshan Zeng, Wanjun Zhong, **Liangyou Li**, Fei Mi, Lifeng Shang, Xin Jiang, Qun Liu, Wei Wang'
 date: 2024-08-11
